@@ -1,0 +1,204 @@
+/*! _normalize.css v8.0.1 (7/2/2021) | MIT License
+ *   github.com/necolas/_normalize.css
+ */
+
+/* === Document === */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15; /* Correct line height in all browsers */
+  -webkit-text-size-adjust: 100%; /* Prevent font size adjustments after */
+} /* orientation changes in iOS */
+
+/* === Sections === */
+
+body {
+  margin: 0; /* Remove margin in all browsers */
+}
+
+main {
+  display: block; /* Render `main` element consistently in IE */
+}
+
+h1 {
+  font-size: 2em; /* Correct `h1` elements within `section` and `article` */
+  margin: 0.67em 0; /* contexts in Chrome | Firefox | Safari */
+}
+
+/* === Grouping content === */
+
+hr {
+  box-sizing: content-box; /* Add correct box sizing in Firefox */
+  height: 0; /* Add correct height in Firefox */
+  overflow: visible; /* Show overflow in Edge | IE */
+}
+
+pre {
+  font-family: monospace, monospace; /* Correct font size inheritance + scaling
+    in all browsers */
+  font-size: 1em; /* Correct odd `em` font sizing in all browsers */
+}
+
+/* === Text-level semantics === */
+
+a {
+  background-color: transparent; /* Remove gray active link background: IE 10 */
+}
+
+abbr[title] {
+  border-bottom: none; /* Remove bottom border in Chrome 57- */
+  text-decoration: underline; /* Add correct text decoration in Chrome | Edge */
+  text-decoration: underline dotted; /* IE | Opera | Safari */
+}
+
+b,
+strong {
+  font-weight: bolder; /* Add correct font weight in Chrome | Edge | Safari */
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* Correct FS inheritance + scaling in all browsers */
+  font-size: 1em; /* Correct odd `em` font sizing in all browsers */
+}
+
+small {
+  font-size: 80%; /* Add correct font size in all browsers */
+}
+
+sub,
+sup {
+  font-size: 75%; /* Prevent `sub` and `sup` elements from affecting the */
+  line-height: 0; /* line height in all browsers. */
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* === Embedded content === */
+
+img {
+  border-style: none; /* Remove border on images inside links in IE 10 */
+}
+
+/* === Forms === */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* Change font styles in all browsers.*/
+  font-size: 100%; /* " */
+  line-height: 1.15; /* " */
+  margin: 0; /* Remove margin in Firefox and Safari */
+}
+
+button,
+input {
+  overflow: visible; /* Show the overflow in Edge */
+}
+
+button,
+select {
+  text-transform: none; /* Remove inheritance of text transform in Firefox */
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* Style clickable types in iOS + Safari */
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none; /* Remove inner border and padding in Firefox */
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; /* Restore focus styles unset by prev. rule */
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em; /* Correct padding in Firefox */
+}
+
+legend {
+  box-sizing: border-box; /* Correct text wrapping in Edge | IE */
+  color: inherit; /* Correct color inheritance from `fieldset` elements in IE */
+  display: table; /* Correct text wrapping in Edge | IE */
+  max-width: 100%; /* Correct text wrapping in Edge | IE */
+  padding: 0; /* Correct when zeroing out `fieldset` elements in all browsers */
+  white-space: normal; /* Correct text wrapping in Edge | IE */
+}
+
+progress {
+  vertical-align: baseline; /* Correct vert. alignment in Chrome|Firefox|Opera */
+}
+
+textarea {
+  overflow: auto; /* Remove default vertical scrollbar in IE 10+ */
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* Add correct box sizing in IE 10 */
+  padding: 0; /* Remove padding in IE 10 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; /* Correct cursor style of Chrome increment/decrement buttons */
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; /* Correct odd appearance in Chrome | Safari */
+  outline-offset: -2px; /* Correct outline style in Safari */
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; /* Remove inner padding in macOS Chrome + Safari */
+}
+
+::-webkit-file-upload-button { /* Correct the inability */
+  -webkit-appearance: button; /* to style clickable types in iOS and Safari */
+  font: inherit; /* Change font properties to `inherit` in Safari */
+}
+
+/* === Interactive === */
+
+details {
+  display: block; /* Add correct display in Edge | IE 10+ | Firefox */
+}
+
+summary {
+  display: list-item; /* Add correct display in all browsers */
+}
+
+/* === Misc === */
+
+template {
+  display: none; /* Add correct display in IE 10+ */
+}
+
+[hidden] {
+  display: none; /* Add correct display in IE 10 */
+}

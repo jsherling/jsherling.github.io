@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="left">
+  <div class="mb-1em">
+    <h1>{{ page.name }}</h1>
+    <small><b>{{ page.position }}</b></small>
+  </div>
+  <div class="content mb-1em">
+    <p>
+      {{ content }}
+    </p>
+    <br>
+  </div>
+
+  {% assign filtered_posts = site.posts | where: "author", page.name %}
+  {% if filtered_posts.size > 0 %}
+  <h4 class="mb-dot5em">Posts</h4>
+  <ul>
+    {% for post in filtered_posts %}
+    <li class="bullet">
+      <a class="blog-author" href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <h4>Articles</h4>
+    {% assign filtered_articles = site.articles %}
+    <ul>
+      {% for article in filtered_articles %}
+      <li class="bullet">
+        <a class="blog-author" href="{{ article.url }}">{{ article.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>

@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;700&family=Roboto:wght@100;400;700&display=swap');
+
+/* Fonts */
+$base-font-family: Roboto, sans-serif;
+$system-serif: Gelasio, serif;
+$h1-size: calc(1.5rem + 3vw);
+$h2-size: calc(1.2rem + 2vw);
+$h4-size: calc(0.8rem + 1vw);
+
+/* Device widths */
+$small-device-fs: 75%;
+$medium-device-fs: 87.5%;
+$large-device-fs: 93.75%;
+$xlarge-device-fs: 100%;
+
+/* Colors */
+$light-grey: #959595;
+$default-color: gray;
+$footer-bg-color: #e6e6e6;
+$font-color: darken($default-color, 60%);
+$light-color: lighten($default-color, 40%);
+$important-color: red;
+$information-color: blue;
+$black-color: lighten(black, 5%);
+$white-color: darken(white, 5%);
+
+/* Misc. */
+$radius: 5px;
+
+@import "style/normalize",
+"style/base",
+"style/layout",
+"style/highlighting"
+;

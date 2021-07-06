@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header mb-1em">
+    <h1 class="post-title">
+      {{ page.title | escape }}
+    </h1>
+    <small class="post-meta"><b>
+      {{ page.date | date: "%b %d, %Y" }} |
+      {% assign author = site.authors | where: 'name', page.author | first %}
+      {% if author %}
+      <a class="blog-author" href="{{ author.url }}">{{ page.author }}</a>
+      {% endif %}
+    </b> •
+      {% assign words = content | number_of_words %}
+      {% if words < 360 %}
+      1 min
+      {% else %}
+      {{ words | divided_by:180 }} mins
+      {% endif %}
+      read
+    </small>
+  </header>
+
+  <!-- Place image in assets/images and include creator's name and the image
+         path in front matter -->
+  {% if page.image-name and page.image-location %}
+  <figure class="image">
+    <img src="{{ page.image-location }}"
+         alt="{{ page.image-name }}" class="post-img mb-dot5em">
+    <figcaption class="post-caption mb-1em">{{ page.image-name }}</figcaption>
+  </figure>
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

@@ -1,0 +1,136 @@
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &--nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $black-color;
+    color: $white-color;
+
+    &__logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 1em 0 1em 2em;
+
+      & h1 {
+        color: $white-color;
+        font-weight: bold;
+      }
+    }
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      list-style-type: none;
+      padding: 1em 2em 1em 0;
+
+      &-item {
+        font-size: 0.7rem;
+
+        & > a {
+          color: $white-color;
+          text-decoration: underline;
+          border-radius: $radius;
+
+          &.current {
+            color: $important-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Container (body) */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li.blog,
+li.article,
+section.staff {
+  border-top: 1px solid $default-color;
+  padding-top: 1em;
+}
+
+li.bullet {
+  list-style-type: square;
+  margin-left: 1em;
+}
+
+li.bullet + li.bullet {
+  margin-top: 0.5em;
+}
+
+.center {
+  text-align: center;
+}
+
+.image {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+
+  & > img {
+    max-width: 100%;
+    border: 1px solid $black-color;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  & > figcaption {
+    font: italic smaller sans-serif;
+  }
+}
+
+.post-content,
+.container {
+  padding-top: 1em;
+}
+
+
+/* Footer */
+
+.footer {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $footer-bg-color;
+  border-top: 1px solid $default-color;
+  padding-top: 1em;
+
+  &--nav {
+    text-align: center;
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-item > a {
+          padding: 0.75em 1em;
+      }
+    }
+  }
+
+  & > div > p {
+    margin-bottom: 0.25em;
+  }
+}

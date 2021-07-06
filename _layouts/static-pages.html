@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="heading center mb-1em">
+  <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}
+  <h4>{{ page.subtitle }}</h4>
+  {% endif %}
+</div>
+
+{% if page.image-name and page.image-location %}
+<figure class="image">
+  <img src="{{ page.image-location }}"
+       alt="{{ page.image-name }}" class="post-img mb-dot5em">
+  <figcaption class="caption mb-1em">{{ page.image-name }}</figcaption>
+</figure>
+{% endif %}
+
+<div class="container left">
+  {{ content }}
+</div>

@@ -1,0 +1,23 @@
+<footer class="footer">
+  <nav class="footer--nav">
+    <ul class="footer--nav__menu mb-1em">
+      {% for item in site.data.footer %}
+      <li class="footer--nav__menu-item">
+        <a href="{{ item.link }}"
+           {% if page.url == item.link %}class="current"{% endif %}>
+          {{ item.name }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="copyright mb-1em">
+    <p class="center">
+      &copy;
+      <span id="copyright-year">
+        {% include snippets.html %}
+      </span>
+      <b>Jeff Sherling</b> | All rights reserved.</p>
+      <p class="center">Powered by <a href="https://jekyllrb.com/">Jekyll</a></p>
+  <!-- class="copyright" --></div>
+</footer>

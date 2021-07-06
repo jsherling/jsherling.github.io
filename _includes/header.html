@@ -1,0 +1,21 @@
+<header class="header">
+  <nav class="header--nav">
+    <div class="header--nav__logo">
+      <h1 class="logo">A Classic Blog</h1>
+      <small>
+        Excerpts from <span class="current">classic</span> literature + some
+        of our junk.
+      </small>
+    </div>
+    <ul class="header--nav__menu">
+      {% for item in site.data.header %}
+      <li class="header--nav__menu-item mb-dot5em">
+        <a href="{{ item.link }}"
+           {% if page.url == item.link %}class="current {{ item.name }}"{% endif %}>
+          {{ item.name }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

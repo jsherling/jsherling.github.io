@@ -1,0 +1,32 @@
+collections:
+  articles:
+    output: true
+  authors:
+    output: true
+  staff:
+    order:
+      - lefay.md
+      - moriarty.md
+      - dewinter.md
+      - defarge.md
+      - hyde.md
+    output: true
+
+permalink: /:categories/:title/
+excerpt_separator: <!--more-->
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
