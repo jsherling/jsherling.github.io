@@ -1,3 +1,9 @@
+# Name of website
+title: A Classic Blog
+domain: jsherling.github.io
+url: https://jsherling.github.io
+baseurl: ''
+
 collections:
   articles:
     output: true
@@ -15,9 +21,11 @@ collections:
 permalink: /:categories/:title/
 excerpt_separator: <!--more-->
 
+include:
+  - _*.html
+
 # Build settings
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate

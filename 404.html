@@ -23,8 +23,8 @@ image-location: "/assets/images/404-image.jpg"
   <h1>404</h1>
 
   <figure class="image">
-    <img src="{{ page.image-location }}"
-         alt="{{ page.image-name }}" class="post-img mb-dot5em">
+    <img src="{{ site.baseurl }}{{ page.image-location }}"
+         alt="{{ site.baseurl }}{{ page.image-name }}" class="post-img mb-dot5em">
     <figcaption class="post-caption mb-1em">{{ page.image-name }}</figcaption>
   </figure>
   <br>

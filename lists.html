@@ -1,0 +1,21 @@
+---
+layout: default
+title: Lists
+---
+<h1 class="mb-dot5em">{{ page.title }}</h1>
+<p class="list-intro">
+  Things are movin' so fast that fatigue sets in just thinking about it! And
+  yet, despite all the newness, there's a sense of déjà vu. Enough navel gazing!
+  Here's our feeble attempt at bringing you the latest on a variety of subjects:
+  trends, tech, slang, fashion, and whatever else grabs our attention.
+</p>
+
+<ul>
+  {% for list in site.lists %}
+  <li class="list bullet">
+    <h2 class="list-title">
+      <a href="{{ site.baseurl }}{{ list.url }}">{{ list.title }}</a>
+    </h2>
+  </li>
+  {% endfor %}
+</ul>
