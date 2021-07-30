@@ -8,7 +8,7 @@
       </small>
     </div>
     <ul class="header--nav__menu">
-      {% for item in site.data.header %}
+      {% for item in site.data.navigation.header %}
       <li class="header--nav__menu-item mb-dot5em">
         <a href="{{ item.link }}"
            {% if page.url == item.link %}class="current {{ item.name }}"{% endif %}>

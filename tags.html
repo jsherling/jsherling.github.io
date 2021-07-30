@@ -1,0 +1,49 @@
+---
+layout: static-pages
+title: Tags
+permalink: /tags/
+---
+<div class="tags-page">
+  <section class="posts">
+    <h2 class="mb-dot5em center">Posts</h2>
+    <div class="left">
+      {% for tag in site.tags %}
+      <h4 class="pt-1em" id="{{ tag[0] }}">{{ tag[0] }}</h4>
+      <ul>
+        {% for post in tag[1] %}
+        <li>
+          <p class="tag">
+            <a class="tag" href="{{ site.baseurl }}/{{ post.url }}">
+              {{ post.title }}
+            </a> | {{ post.date | date: "%b %d, %Y" }}
+          </p>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="articles">
+    <h2 class="mb-dot5em center">Articles</h2>
+    <div class="left">
+      {% assign tags =  site.articles | map: 'tags' | uniq %}
+      {% for temp in tags %}
+      <h4 class="pt-1em" id="{{ temp }}">{{ temp | capitalize }}</h4>
+      <ul>
+        {% for article in site.articles %}
+        {% if article.tags contains temp %}
+        <li>
+          <p class="tag">
+            <a href="{{ site.baseurl }}/{{ article.url }}">
+              {{ article.title }}
+            </a> | {{ article.date | date: "%b %d, %Y" }}
+          </p>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+  </section>
+</div>
