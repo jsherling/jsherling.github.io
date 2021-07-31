@@ -11,7 +11,9 @@ layout: default
       {{ page.date | date: "%b %d, %Y" }} |
       {% assign author = site.authors | where: 'name', page.author | first %}
       {% if author %}
-      <a class="blog-author" href="{{ author.url }}">{{ page.author }}</a>
+        <a class="blog-author" href="{{ author.url | prepend: site.baseurl }}">
+          {{ page.author }}
+        </a>
       {% endif %}
     </b> •
       {% assign words = content | number_of_words %}
@@ -28,7 +30,7 @@ layout: default
          path in front matter -->
   {% if page.image-name and page.image-location %}
   <figure class="image">
-    <img src="{{ page.image-location }}"
+    <img src="{{ page.image-location | prepend: site.baseurl }}"
          alt="{{ page.image-name }}" class="post-img mb-dot5em">
     <figcaption class="post-caption mb-1em">{{ page.image-name }}</figcaption>
   </figure>
@@ -37,4 +39,12 @@ layout: default
   <div class="post-content">
     {{ content }}
   </div>
+
+  <footer class="page-tag">
+    {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/tags#{{ tag }}" class="tag border">
+        &num; {{ tag }}
+      </a>
+    {% endfor %}
+  </footer>
 </article>

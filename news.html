@@ -6,8 +6,8 @@ title: Timeless Articles
 <h1 class="mb-dot5em">{{ page.title }}</h1>
 <p>
   These articles, written by our amazing staff along with the occasional guest,
-  cover all aspects of writing &mdash; from soup to nuts,<!--more--> as they say. We try to
-  add something every week, but some weeks are busy, hectic even, and others are
+  cover all aspects of writing &mdash; from soup to nuts, as they say. We try to add
+  something every week, but some weeks are busy, hectic even, and others are
   more sedate. New books tend to start arriving in greater frequency during the
   mid spring through late fall months, so just keep checking back. It will be
   worth the wait.
@@ -17,14 +17,17 @@ title: Timeless Articles
   {% assign sorted = site.articles | sort: 'date' | reverse %}
   {% for article in sorted %}
   <li class="article">
-    <h2 class="article-title">
-      <a href="{{ article.url }}">{{ article.title }}</a>
-    </h2>
-    <small><b>
-      {{ article.date | date: "%b %d, %Y" }} | Staff
-    </b></small>
-    <p>
-      {{ article.excerpt }}
+    <header class="article-header">
+      <h2 class="article-title">
+        <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+      </h2>
+      <small class="article-byline"><b>
+        {{ article.date | date: "%b %d, %Y" }} | Staff
+      </b></small>
+    </header>
+    <p class="excerpt">
+      <br>
+      {{ article.excerpt | remove: '<p>' | remove: '</p>' }}
     </p>
   </li>
   {% endfor %}

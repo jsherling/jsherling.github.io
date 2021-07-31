@@ -2,15 +2,14 @@
 layout: post
 title: "The Hunchback of Notre-Dame"
 author: Victor Hugo
-date: 1831-03-24
-categories: Hugo
+category: Hugo
+tags: French Historical
 ---
+**THE GRAND HALL**
 
-### THE GRAND HALL.
-  
 Three hundred and forty-eight years, six months, and nineteen days ago to-day,
 the Parisians awoke to the sound of all the bells in the triple circuit of the
-city, the university, and the town ringing a full peal.<!--more-->
+city, the university, and the town ringing a full peal<!--more-->.
 
 The sixth of January, 1482, is not, however, a day of which history has
 preserved the memory. There was nothing notable in the event which thus set the

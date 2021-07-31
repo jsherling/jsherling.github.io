@@ -15,9 +15,15 @@
     <p class="center">
       &copy;
       <span id="copyright-year">
-        {% include snippets.html %}
+        {{ 'now' | date: "%Y" }}
       </span>
       <b>Jeff Sherling</b> | All rights reserved.</p>
-      <p class="center">Powered by <a href="https://jekyllrb.com/">Jekyll</a></p>
+      Powered by <a href="https://jekyllrb.com/">Jekyll</a>
   <!-- class="copyright" --></div>
+  <!--
+    1. Add jekyll-feed gem to Gemfile and _config.yml
+    2. Use Font Awesome to display RSS icon
+    <div class="rss-feed">
+      Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
+    </div> -->
 </footer>

@@ -2,11 +2,11 @@
 layout: post
 title: "Les Miserables"
 author: Victor Hugo
-date: 1862-05-23
-categories: Hugo
+category: Hugo
+tags: French Historical
 ---
 In 1815, M. Charles-Francois-Bienvenu Myriel was Bishop of D-- He was an old man
-of about seventy-five years of age; he had occupied the see of D-- since 1806.<!--more-->
+of about seventy-five years of age; he had occupied the see of D-- since 1806<!--more-->.
 
 Although this detail has no connection whatever with the real substance of what
 we are about to relate, it will not be superfluous, if merely for the sake of

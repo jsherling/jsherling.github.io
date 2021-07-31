@@ -2,12 +2,11 @@
 layout: post
 title:  "The Great Gatsby"
 author: F. Scott Fitzgerald
-date:   1925-04-21
-categories: Fitzgerald
+category: Fitzgerald
+tags: American Drama
 ---
-
 In my younger and more vulnerable years my father gave me some advice that I’ve
-been turning over in my mind ever since.<!--more-->
+been turning over in my mind ever since<!--more-->.
 
 “Whenever you feel like criticizing anyone,” he told me, “just remember that all
 the people in this world haven’t had the advantages that you’ve had.”

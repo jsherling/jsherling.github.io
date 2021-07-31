@@ -22,7 +22,7 @@ layout: default
 
   {% if page.image-name and page.image-location %}
   <figure class="image">
-    <img src="{{ page.image-location }}"
+    <img src="{{ page.image-location | prepend: site.baseurl }}"
          alt="{{ page.image-name }}" class="post-img mb-dot5em">
     <figcaption class="post-caption mb-1em">{{ page.image-name }}</figcaption>
   </figure>
@@ -31,4 +31,15 @@ layout: default
   <div class="post-content">
     {{ content }}
   </div>
+
+  <footer class="page-tag">
+    <small>
+      <b>Tags: </b>
+      {% for tag in page.tags %}
+        <a href="{{ site.baseurl }}/tags#{{ tag }}" class="tag border">
+          &num; {{ tag }}
+        </a>
+      {% endfor %}
+    </small>
+  </footer>
 </article>

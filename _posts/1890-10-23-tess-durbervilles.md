@@ -2,10 +2,9 @@
 layout: post
 title: "Tess of the D'Urbervilles"
 author: Thomas Hardy
-date: 1890-10-23
-categories: Hardy
+category: Hardy
+tags: English Tragedy
 ---
-
 On an evening in the latter part of May a middle-aged man was walking homeward
 from Shaston to the village of Marlott, in the adjoining Vale of Blakemore, or
 Blackmoor. The pair of legs that carried him<!--more--> were rickety, and there was a bias

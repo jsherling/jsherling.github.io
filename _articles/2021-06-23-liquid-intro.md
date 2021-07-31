@@ -5,9 +5,10 @@ author: Staff
 date:   2021-06-23
 image-name: "Image by Annie Spratt (Unsplash.com)"
 image-location: "/assets/images/waves-of-grain.jpg"
+tags: liquid special characters markdown
 ---
 
-#### 4.16 Escape special characters
+**4.16 Escape special characters**
 
 Some characters have special meanings in the Markdown syntax. If you want these
 characters verbatim, you have to escape them. For<!--more--> example, a pair of underscores

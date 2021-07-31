@@ -58,10 +58,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
+li.author,
 li.blog,
 li.article,
+li.list,
 section.staff {
   border-top: 1px solid $default-color;
   padding-top: 1em;
@@ -70,6 +73,10 @@ section.staff {
 li.bullet {
   list-style-type: square;
   margin-left: 1em;
+}
+
+li.bullet::marker {
+  vertical-align: middle;
 }
 
 li.bullet + li.bullet {
@@ -103,15 +110,25 @@ li.bullet + li.bullet {
   padding-top: 1em;
 }
 
+p.excerpt::after {
+  content: '...';
+}
+
+.tags-page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2vw;
+}
+
+h1.article-title {
+  text-align: left;
+}
 
 /* Footer */
 
 .footer {
   width: 100vw;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-color: $footer-bg-color;
   border-top: 1px solid $default-color;
   padding-top: 1em;

@@ -5,4 +5,4 @@ position: Security, Intern
 category: Staff
 ---
 
-Mr. Hyde is sponsored by Dr. Jekyll.
+Mr. Hyde is sponsored by Dr. Jekyll<!--more-->.

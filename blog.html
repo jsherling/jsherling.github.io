@@ -5,29 +5,29 @@ title: Latest Posts
 <h1 class="mb-dot5em">{{ page.title }}</h1>
 <p>
   Each post is an excerpt from one of the books that cross our front desk, often
-  accompanied by the reviewer's grumblings, such as "why can't I write this
-  descriptively?" or "I own socks older than this author." We add content as
-  often as it arrives, which is more frequent in the mid spring through late
-  autumn months. When things are slower, the Timeless Classics staff adds click
-  bait articles you can browse at your leisure.
+  accompanied by the reviewer grumbling "why can't I write like this?" or "I own
+  socks older than this author." We add content as often as it arrives, which is
+  more frequent in the mid spring through late autumn months. When things are
+  slower, the Timeless Classics staff adds click bait articles you can browse at
+  your leisure.
 </p>
 
 <ul>
   {% for post in site.posts %}
-  <li class="blog">
-    <h2 class="post-title">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <small><b>
-      {{ post.date | date: "%b %d, %Y" }} |
-      {% assign author = site.authors | where: 'name', post.author | first %}
-      {% if author %}
-      <a class="blog-author" href="{{ author.url }}">{{ post.author }}</a>
-      {% endif %}
-    </b></small>
-    <p>
-      {{ post.excerpt }}
-    </p>
-  </li>
+    <li class="blog">
+      <h2 class="post-title">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      <small><b>
+        {{ post.date | date: "%b %d, %Y" }} |
+        {% assign author = site.authors | where: 'name', post.author | first %}
+        {% if author %}
+        <a class="blog-author" href="{{ site.baseurl }}{{ author.url }}">{{ post.author }}</a>
+        {% endif %}
+      </b></small>
+      <p class="excerpt">
+        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+      </p>
+    </li>
   {% endfor %}
 </ul>

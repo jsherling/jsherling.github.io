@@ -2,10 +2,9 @@
 layout: post
 title: "Madame Bovary"
 author: Gustave Flaubert
-date: 1857-04-24
-categories: Flaubert
+category: Flaubert
+tags: French Domestic
 ---
-
 We were in class when the head-master came in, followed by a “new fellow,” not
 wearing the school uniform, and a school servant carrying a large desk. Those
 who had been asleep woke up, and<!--more--> every one rose as if just surprised at his

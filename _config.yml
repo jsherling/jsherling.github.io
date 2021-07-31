@@ -7,6 +7,8 @@ baseurl: ''
 collections:
   articles:
     output: true
+  lists:
+    output: true
   authors:
     output: true
   staff:
@@ -38,3 +40,7 @@ defaults:
       path: "assets/images"
     values:
       image: true
+
+repository: jsherling/classic-blog
+github: [metadata]
+

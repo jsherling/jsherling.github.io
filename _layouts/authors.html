@@ -4,7 +4,7 @@ layout: default
 
 <div class="left">
   <div class="mb-1em">
-    <h1>{{ page.name }}</h1>
+    <h1 class="left">{{ page.name }}</h1>
     <small><b>{{ page.position }}</b></small>
   </div>
   <div class="content mb-1em">
@@ -20,7 +20,7 @@ layout: default
   <ul>
     {% for post in filtered_posts %}
     <li class="bullet">
-      <a class="blog-author" href="{{ post.url }}">{{ post.title }}</a>
+      <a class="blog-author" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>
@@ -30,7 +30,7 @@ layout: default
     <ul>
       {% for article in filtered_articles %}
       <li class="bullet">
-        <a class="blog-author" href="{{ article.url }}">{{ article.title }}</a>
+        <a class="blog-author" href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
       </li>
       {% endfor %}
     </ul>

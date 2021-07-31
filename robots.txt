@@ -1,0 +1,4 @@
+User-agent: *
+Crawl-delay: 120
+Disallow:
+Sitemap: https://jsherling.github.io/classic-blog/sitemap.xml
