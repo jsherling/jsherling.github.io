@@ -1,6 +1,7 @@
 ---
 layout: static-pages
 title: Your Reading Adventure Awaits!
+alt-text: "Woman on couch reading a book"
 image-name: "Image by Seven Shooter (Unsplash.com)"
 image-location: "/assets/images/reader.jpg"
 ---
