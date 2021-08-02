@@ -4,7 +4,7 @@
 	"sources": [
 		"main.scss",
 		"_sass/app.scss",
-		"_sass/style/_normalize.css",
+		"_sass/style/_normalize.scss",
 		"_sass/style/_base.scss",
 		"_sass/style/_layout.scss",
 		"_sass/style/_highlighting.scss"
