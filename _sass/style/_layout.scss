@@ -141,8 +141,8 @@ h1.article-title {
       align-items: center;
       justify-content: center;
 
-      &-item > a {
-          padding: 0.75em 1em;
+      &-item > p {
+        padding: 0.5em 1em 0 1em;
       }
     }
   }

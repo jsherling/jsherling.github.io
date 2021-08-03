@@ -10,7 +10,7 @@
     <ul class="header--nav__menu">
       {% for item in site.data.navigation.header %}
       <li class="header--nav__menu-item mb-dot5em">
-        <a href="{{ item.link }}"
+        <a href="{{ site.baseurl }}{{ item.link }}"
            {% if page.url == item.link %}class="current {{ item.name }}"{% endif %}>
           {{ item.name }}
         </a>
