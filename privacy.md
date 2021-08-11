@@ -1,9 +1,16 @@
 ---
 layout: static-pages
-title: Privacy Policy
-date: July 24, 2021
+title: Privacy Notice
+date: August 11, 2021
 ---
-This Privacy Policy describes Our policies and procedures on the collection,
+
+Thank you for choosing to be part of our community at Test Werks LLC ("Company",
+"we", "us", or "our"). We are committed to protecting your personal information
+and your right to privacy. If you have any questions or concerns about this
+privacy notice or our practices with regard to your personal information, please
+contact us at info@test-werks-llc.com.
+
+This Privacy Notice describes Our policies and procedures on the collection,
 use and disclosure of Your information when You use the Service and tells You
 about Your privacy rights and how the law protects You.
 
