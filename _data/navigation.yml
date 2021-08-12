@@ -16,9 +16,9 @@ footer:
     link: /about/
   - name: Contact
     link: /contact/
-  - name: Help
-    link: /help/
-  - name: Terms
-    link: /terms/
   - name: Privacy
     link: /privacy/
+  - name: Disclaimer
+    link: /disclaimer/
+  - name: Terms
+    link: /terms/
