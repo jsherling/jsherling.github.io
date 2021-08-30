@@ -11,7 +11,7 @@ title: Tags
         <ul>
           {% for post in tag[1] %}
             <li>
-              <p class="tag">
+              <p class="mb-dot5em">
                 <a class="tag" href="{{ site.baseurl }}/{{ post.url }}">
                     {{ post.title }}
                   </a> | {{ post.date | date: "%b %d, %Y" }}
@@ -33,7 +33,7 @@ title: Tags
           {% for article in site.articles %}
             {% if article.tags contains temp %}
             <li>
-              <p class="tag">
+              <p class="mb-dot5em">
                 <a href="{{ site.baseurl }}/{{ article.url }}">
                   {{ article.title }}
                 </a> | {{ article.date | date: "%b %d, %Y" }}

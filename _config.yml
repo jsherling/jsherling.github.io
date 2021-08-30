@@ -2,7 +2,7 @@
 title: A Classic Blog
 domain: jsherling.github.io
 url: https://jsherling.github.io
-baseurl: ''
+baseurl:
 
 collections:
   articles:
@@ -41,6 +41,5 @@ defaults:
     values:
       image: true
 
-repository: jsherling/classic-blog
+repository: jsherling/jsherling-github-io
 github: [metadata]
-
