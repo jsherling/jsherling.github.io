@@ -2,7 +2,6 @@
 title: A Classic Blog
 domain: jsherling.github.io
 url: https://jsherling.github.io
-baseurl:
 
 collections:
   articles:
